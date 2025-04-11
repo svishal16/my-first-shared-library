@@ -10,7 +10,6 @@ def call(String status) {
     emailext(
         subject: subject,
         body: body,
-        recipientProviders: [[$class: 'DevelopersRecipientProvider']],
         to: 'shrivastavav090@gmail.com'
     )
 }
