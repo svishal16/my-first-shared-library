@@ -1,4 +1,4 @@
-def call(string SONAR_SERVER, string SONAR_PROJECT_KEY){
+def call(){
     withSonarQubeEnv("${SONAR_SERVER}"){
         sh "mvn sonar:sonar -Dsonar.projectKey=${SONAR_PROJECT_KEY}"
     }
