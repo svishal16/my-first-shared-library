@@ -1,7 +1,7 @@
 def call(String project, String imageTag, String hubUser){
 
     withCredentials([usernamePassword(
-        credentialsId: "docker-pass",
+        credentialsId: "dockerhub",
         usernameVariable: "USER",
         passwordVariable: "PASS"
     )]) {
